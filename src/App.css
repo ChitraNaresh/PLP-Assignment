@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body{
+  box-sizing: border-box;
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page{
+  max-width: 900px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.app-name{
+  text-align: center;
+  margin-bottom: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-card{
+  display: flex;
+  align-items: center;
+}
+.menu-icon{
+  margin-left: 20px;
+}
+.header{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-products-card{
+ display: grid;
+ border: 1px solid #000;
+ padding: 10px;
+ border-radius: 10px;
+}
+.all-products-card-one{
+  grid-template-columns: repeat(1,98%);
+}
+.all-products-card-two{
+  grid-template-columns: repeat(2,46%);
+  column-gap: 5%;
+}
+@media screen and (min-width:550px){
+  .home-page{
+   min-width: 500px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.menu-icon{
+  cursor: pointer;
+}
+.search-input{
+  min-width: 180px;
+  font-size: 12px;
+  height: 25px;
+  padding-left: 5px;
+  font-weight: 600;
 }
